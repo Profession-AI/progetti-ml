@@ -44,3 +44,5 @@ Il dataset è disponibile qui: <https://proai-datasets.s3.eu-west-3.amazonaws.co
 - **parking**: numero di parcheggi
 - **prefarea**: vale 1 se l’immobile è in una zona prestigiosa, 0 altrimenti
 - **Furnishingstatus:** vale 0 se l’immobile non è arredato, 1 se è parzialmente arredato, 2 se è completamente arredato
+
+# Modalità di consegna: link al notebook di Google Colab
