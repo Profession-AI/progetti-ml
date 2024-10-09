@@ -75,6 +75,6 @@ La segmentazione della clientela permette a FinTech Solutions S.p.A. di migliora
 
 # Link al dataset
 
-https://proai-datasets.s3.eu-west-3.amazonaws.com/credit_card_customers.csv
+[Scarica il dataset](https://proai-datasets.s3.eu-west-3.amazonaws.com/credit_card_customers.csv)
 
 # Modalità di consegna: notebook di google colab
