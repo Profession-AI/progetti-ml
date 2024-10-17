@@ -32,4 +32,3 @@ Il progetto è complesso e richiede competenze avanzate in **Computer Vision** e
 ## Conclusione
 La realizzazione di un sistema di rilevamento volti con risorse limitate e senza dataset preconfezionato è una sfida che richiede una forte capacità di problem-solving e adattamento. Una pipeline ben ottimizzata e documentata non solo contribuirà al successo del lancio del prodotto ProCam, ma rappresenterà anche un passo significativo nella tua crescita professionale come Data Scientist.
 
-# Modalità di consegna: link al notebook di Google Colab

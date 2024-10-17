@@ -71,5 +71,3 @@ Una volta ottenuto il modello ottimale, verrà esportato utilizzando **pickle** 
 ## Conclusione
 
 La realizzazione di questo modello di previsione della progressione del diabete rappresenta un enorme valore aggiunto per **MedPredict s.r.l.** e per i professionisti sanitari che collaborano con l'azienda. Grazie a questo strumento, i medici potranno adottare un approccio più proattivo nella gestione del diabete, migliorando la qualità della vita dei pazienti e ottimizzando le risorse sanitarie. L'accuratezza del modello permetterà decisioni cliniche più precise e un monitoraggio più efficiente delle malattie croniche.
-
-# Modalità di consegna: notebook di google colab

@@ -71,4 +71,4 @@ Fai attenzione alla distribuzione delle classi, dai uno sguardo a [questo approf
 - Penalizzare la classe più frequente (ricorda l'argomento class_weight)
 - Utilizzare l'oversampling o l'undersampling (cfr. [questo articolo](https://machinelearningmastery.com/random-oversampling-and-undersampling-for-imbalanced-classification/))
 
-# Modalità di consegna: link al notebook di Google Colab
+

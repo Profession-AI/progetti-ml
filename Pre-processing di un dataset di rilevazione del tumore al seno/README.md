@@ -18,7 +18,7 @@ L'obiettivo è ottenere un **unico oggetto finale** che racchiuda tutte le fasi 
 
 ## Descrizione delle Pipeline
 
-Il dataset è scaricabile da qui: https://proai-datasets.s3.eu-west-3.amazonaws.com/sample_dataset.csv
+Il dataset è scaricabile da qui: [https://proai-datasets.s3.eu-west-3.amazonaws.com/sample_dataset.csv](https://proai-datasets.s3.eu-west-3.amazonaws.com/sample_dataset.csv)
 
 ### Pipeline 1: Pre-processing per Record con Target = 1
 
@@ -66,4 +66,3 @@ Al termine di tutte queste pipeline, verrà creato un **oggetto finale** che rac
 
 La pipeline di pre-processing proposta non solo migliora la qualità dei dati, ma ottimizza anche il flusso di lavoro aziendale, consentendo una maggiore **efficienza operativa** e una migliore **affidabilità dei modelli predittivi**. Attraverso la standardizzazione, la simmetrizzazione e l'uso del PCA, i dati saranno pronti per essere utilizzati nelle fasi successive di modellazione, fornendo un contributo significativo all'accuratezza delle previsioni sul tumore al seno.
 
-# Modalità di consegna: link al notebook di Google Colab

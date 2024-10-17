@@ -40,4 +40,3 @@ Devi realizzare un modello che preveda il **target** dato, ovvero la variabile *
 
 Se ad un cliente viene negata la carta di credito, il team deve essere in grado di fornirgli una motivazione. Questo significa che il tuo modello deve fornire delle indicazioni facilmente interpretabili.
 
-# Modalità di consegna: link al notebook di Google Colab
