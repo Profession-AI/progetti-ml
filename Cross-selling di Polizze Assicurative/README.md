@@ -13,7 +13,7 @@ L'obiettivo è sviluppare un **modello di machine learning** che preveda se i cl
 
 ## Dataset
 
-Il dataset (scaricabile da qui: [https://proai-datasets.s3.eu-west-3.amazonaws.com/insurance\_cross\_sell.csv](https://proai-datasets.s3.eu-west-3.amazonaws.com/insurance_cross_sell.csv)) contiene informazioni dettagliate sui clienti e sul loro comportamento assicurativo. Le caratteristiche principali del dataset sono:
+Il dataset (che è scaricabile da qui: [https://proai-datasets.s3.eu-west-3.amazonaws.com/insurance\_cross\_sell.csv](https://proai-datasets.s3.eu-west-3.amazonaws.com/insurance_cross_sell.csv)) contiene informazioni dettagliate sui clienti e sul loro comportamento assicurativo. Le caratteristiche principali del dataset sono:
 
 - **id**: identificativo univoco del cliente.
 - **Gender**: sesso del cliente.
