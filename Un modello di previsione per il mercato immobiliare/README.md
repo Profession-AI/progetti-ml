@@ -23,7 +23,6 @@ Implementando e confrontando metodi di regolarizzazione come Lasso, Ridge e Elas
 4. **Visualizzazione dei Risultati**:
     - Creazione di grafici per visualizzare e confrontare le performance dei modelli.
     - Visualizzazione della distribuzione dei residui per valutare l'adeguatezza del modello.
-    - Visualizzazione dell'andamento dei coefficienti dei modelli rispetto ai parametri di regolarizzazione.
 
 Il progetto deve includere il codice sorgente completo, con commenti dettagliati che spiegano i vari passaggi, le scelte fatte e i risultati ottenuti, per garantire trasparenza e replicabilità del lavoro.
 
