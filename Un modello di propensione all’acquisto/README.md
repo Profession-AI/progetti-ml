@@ -6,7 +6,7 @@ In un contesto commerciale altamente competitivo, le aziende cercano continuamen
 
 ## Obiettivo del Progetto
 
-L'obiettivo principale è creare un modello predittivo che identifichi i clienti più propensi all'acquisto, consentendo all'azienda di ottimizzare le sue strategie di marketing. Utilizzerai la libreria **pandas** per la preparazione dei dati e **scikit-learn** per addestrare un modello di classificazione, come una regressione logistica o un decision tree. La valutazione delle performance sarà effettuata attraverso metriche come l'accuratezza e l'AUC.
+L'obiettivo principale è creare un modello predittivo che identifichi i clienti più propensi all'acquisto, consentendo all'azienda di ottimizzare le sue strategie di marketing. Utilizzerai la libreria **pandas** per la preparazione dei dati e **scikit-learn** per addestrare un modello di classificazione, come una regressione logistica o un decision tree. La valutazione delle performance sarà effettuata attraverso metriche come l'accuratezza e l'AUC. Sarà inoltre necessario commentare la scelta delle metriche e anche i risultati del modello.
 
 ### Caso d'Uso Aziendale
 
@@ -25,6 +25,7 @@ Immagina di lavorare per "MarketGenius", una media impresa che vende prodotti di
 ## Dataset e Fonti
 
 Il dataset utilizzato per questo progetto è disponibile qui: [clienti.xlsx](https://github.com/Profession-AI/progetti-ml/raw/refs/heads/main/Un%20modello%20di%20propensione%20all%E2%80%99acquisto/clienti.xlsx). Il dataset contiene le seguenti colonne: 
+
 - `id_cliente`: un identificativo univoco del cliente
 - `engagement`: indica quante volte il cliente ha risposto positivamente ad azioni di marketing
 - `eta`: l'età del cliente in anni
