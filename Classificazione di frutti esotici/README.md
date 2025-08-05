@@ -44,7 +44,7 @@ Contiene le seguenti variabili:
 4. **Lunghezza media (mm)**: La lunghezza media del frutto in millimetri. Variabile continua.
 5. **Durezza buccia (1-10)**: La durezza della buccia del frutto su una scala da 1 a 10. Variabile continua.
 6. **Dolcezza (1-10)**: La dolcezza del frutto su una scala da 1 a 10. Variabile continua.
-7. **Acidità (1-10)**: L'acidità del frutto su una scala da 1 a 10. Variabile continua.
+
 
 Ricorda di eseguire una corretta analisi esplorativa del dataset prima di procedere con il modello. Ricordati anche di applicare il corretto preprocessing ai dati e di misurare le performance del modello secondo le metriche che ritieni più utili.
 
