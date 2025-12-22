@@ -19,7 +19,7 @@ Valore aggiunto: tracciabilità dei motivi di scarto aggregata per macchina/lott
 
 ## Dataset 
 
-File: parts_production_data.csv
+File: parts_production_data.csv (scaricabile dal seguente link: [https://github.com/Profession-AI/progetti-ml/blob/main/Modello%20di%20classificazione%20di%20pezzi%20difettosi%20in%20produzione/parts_production_data.csv](https://github.com/Profession-AI/progetti-ml/blob/main/Modello%20di%20classificazione%20di%20pezzi%20difettosi%20in%20produzione/parts_production_data.csv))
 
 Colonne:
 1. part_id: identificativo univoco del pezzo
