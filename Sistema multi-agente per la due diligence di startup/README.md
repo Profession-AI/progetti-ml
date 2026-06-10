@@ -1,34 +1,59 @@
 # Sistema multi-agente per la due diligence di startup
 
-## Contest del Progetto
+## Contesto aziendale
 
-Helix Ventures è un fondo di venture capital early-stage che ogni mese valuta decine di startup. La due diligence iniziale — analisi di mercato, team, prodotto e finanza — richiede oggi due o tre giorni di lavoro per analista. L'azienda vuole automatizzare questa fase con un sistema multi-agente che, dati il nome e il sito di una startup, produca un memo strutturato in meno di mezz'ora.
+Helix Ventures è un fondo di venture capital early-stage che valuta ogni mese decine di startup.
+La due diligence iniziale (analisi di mercato, team, prodotto, finanza) richiede oggi 2-3 giorni di
+lavoro per analista. L'azienda vuole automatizzare questa fase con un sistema multi-agente che,
+dato il nome e il sito di una startup, produca un memo strutturato in meno di mezz'ora.
 
-## Benefici del Progetto
+## Obiettivi del progetto
 
-L'orchestrazione di agenti specializzati porta benefici misurabili:
-
-- Riduzione dei tempi: la due diligence passa da giorni a minuti, accelerando il flusso di valutazione del fondo.
-- Copertura strutturata: ogni dimensione dell'analisi è presidiata da un agente con ruolo e responsabilità definiti.
-- Robustezza: il memo viene prodotto anche in presenza di errori o sezioni mancanti, grazie a strategie di degradazione controllata.
-- Confronto metodologico: due implementazioni parallele permettono di valutare framework alternativi su basi oggettive.
-
-## Dettagli del Progetto
-
-Il sistema parte dalla definizione dei requisiti, individuando da quattro a sei agenti (ad esempio Coordinator, Market Analyst, Tech Reviewer, Team Analyst, Memo Writer) con ruolo, goal, backstory, tool e perimetro di responsabilità. Viene implementato due volte, una con CrewAI e una con LangGraph, applicando un pattern di orchestrazione Supervisor con almeno un punto di parallelismo. Lo stato condiviso è tipizzato con Pydantic e gestisce almeno un conflitto di scrittura tramite una reducer function. Almeno un tool è esposto tramite un MCP Server custom in Python. La gestione degli errori prevede retry, fallback e graceful degradation. Il sistema è esposto come API FastAPI con gli endpoint POST /due_diligence e GET /health, containerizzata con Docker, e le esecuzioni sono tracciate con Langfuse o LangSmith.
-
-## Obiettivi del Progetto
-
-1. Progettare il sistema partendo dai requisiti e dal design degli agenti.
-2. Implementare il sistema in CrewAI e in LangGraph con orchestrazione Supervisor.
-3. Definire uno stato condiviso tipizzato con gestione dei conflitti di scrittura.
-4. Esporre un tool tramite MCP Server custom e gestire gli errori in modo resiliente.
-5. Deployare l'API containerizzata e tracciarne le esecuzioni.
+1. Progettare il sistema partendo dai requisiti: definire 4-6 agenti (es. Coordinator, Market
+   Analyst, Tech Reviewer, Team Analyst, Memo Writer) con ruolo, goal, backstory, tool e
+   perimetro di responsabilità.
+2. Implementare il sistema due volte, una con CrewAI e una con LangGraph, applicando un
+   pattern di orchestrazione Supervisor con almeno un punto di parallelismo.
+3. Definire uno stato condiviso tipizzato con Pydantic, gestendo almeno un conflitto di scrittura
+   con una reducer function.
+4. Esporre almeno un tool tramite un MCP Server custom implementato in Python.
+5. Gestire errori con retry, fallback e graceful degradation (il memo va prodotto anche se
+   manca una sezione).
+6. Esporre il sistema come API FastAPI con POST /due_diligence e GET /health, containerizzata
+   con Docker.
+7. Tracciare le esecuzioni con Langfuse o LangSmith e includere uno screenshot di una traccia.
 
 ## Deliverable
 
-Un notebook Colab contenente documento di design, le due implementazioni, il codice dell'MCP Server, il materiale di deploy (Dockerfile e API) e un confronto motivato tra i framework su righe di codice, leggibilità, debugging e costi. Le ricerche web possono essere mockate per garantire la riproducibilità, ma il codice deve poter usare Tavily reale tramite variabile d'ambiente. I nomi sono in inglese e snake_case (CamelCase per le classi), con docstring obbligatorie per agenti, tool e funzioni dello stato condiviso.
+Notebook Colab con: documento di design, implementazione CrewAI, implementazione
+LangGraph, codice dell'MCP Server, deploy (Dockerfile e API), confronto motivato tra i due
+framework su righe di codice, leggibilità, debugging e costi.
 
-## Motivazione del Progetto
+## Esempio di interazione
 
-Automatizzando la due diligence iniziale, Helix Ventures aumenta la capacità di analisi del fondo, riduce il rischio di omissioni e libera gli analisti per le valutazioni a maggior valore aggiunto, consolidando un processo decisionale più rapido e ripetibile.
+Richiesta
+
+```json
+POST /due_diligence
+{
+  "startup_name": "NeuroSpark",
+  "startup_url": "https://neurospark.example.com"
+}
+```
+
+Risposta
+
+```json
+{
+  "completed_sections": ["market", "tech", "team", "financial"],
+  "final_memo": "# Due Diligence — NeuroSpark\n## Executive Summary\n...",
+  "execution_metadata": { "total_tokens": 48230, "duration_seconds": 142 }
+}
+```
+
+## Note
+
+1. Nomi di variabili, funzioni e classi sempre in inglese, snake_case (CamelCase solo per classi).
+2. Le ricerche web possono essere mockate per garantire riproducibilità del notebook, ma il
+   codice deve poter usare Tavily reale tramite variabile d'ambiente.
+3. Docstring obbligatorie per agenti, tool e funzioni dello stato condiviso.
